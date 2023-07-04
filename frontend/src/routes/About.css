@@ -1,0 +1,42 @@
+/* About.css */
+.info{
+   
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color:#7FB069;
+  }
+
+  .points {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .image-container {
+    margin-left: 30px;
+    size-adjust: 20px;
+  }
+  
+  .point-image {
+    width: 20px; 
+  }
+  
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  ol {
+    margin: 0 0 20px 20px;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
+  

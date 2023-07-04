@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import "./Navbar.css";
-import {GiRocketThruster} from "react-icons/gi";
+import {GiBookCover} from "react-icons/gi";
 import {FaBars, FaTimes} from "react-icons/fa";
 import {IconContext} from "react-icons/lib";
 
@@ -15,8 +15,8 @@ function Navbar()
         <nav className='navbar'>
             <div className='navbar-container container'>
                 <Link to="/" className="navbar-logo" onClick={closeMobileMenu} >
-                    <GiRocketThruster className="navbar-icon"/>
-                    Skye
+                    <GiBookCover className="navbar-icon"/>
+                    MyBook
                 </Link>
                 <div className='menu-icon' onclick={handleClick}>
                     {click ? <FaTimes/>: <FaBars/>}
@@ -49,7 +49,25 @@ function Navbar()
                         Signup
                         </NavLink>
                     </li>
-            </ul>
+                    <li className="nav-item">
+                        <NavLink to="/register" 
+                        className={({ isActive }) => 
+                        "nav-links" + (isActive ? " activated" :"")}
+                        onClick={closeMobileMenu}
+                        >
+                        Register
+                        </NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink to="/products" 
+                        className={({ isActive }) => 
+                        "nav-links" + (isActive ? " activated" :"")}
+                        onClick={closeMobileMenu}
+                        >
+                        Products
+                        </NavLink>
+                    </li>
+                </ul>
             </div>
         </nav>
   </IconContext.Provider>

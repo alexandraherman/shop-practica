@@ -1,11 +1,29 @@
 import react from "react"
-//import p1 from '../images/p1.jpg';
-
+import "./Home.css";
+import { Button } from './Button';
 const Home = () => {
 	return (
-		<div>
-			HOME
+	  <div>
+			<div className="card">
+				<h1>Home</h1>
+			</div>
+			<div className='hero-container'>
+      			{/*<img src='./images/p1.jpg'></img>*/}
+      			<h1>The adventure of creation</h1>
+      			<p>What are you waiting for?</p>
+
+				<div className='hero-btns'>
+					<Button
+						className='btns'
+						buttonStyle='btn--outline'
+						buttonSize='btn--large'
+					>
+						GET STARTED
+					</Button>
+				</div>
+			</div>
 		</div>
+	
 
 	);
 };

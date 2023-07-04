@@ -5,19 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #33658A;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-#main{
-  width: 100%;
-  height: 768%;
-  position:relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('./images/p1.jpg');
-  position: relative;
-  z-index: 0;
-}
+

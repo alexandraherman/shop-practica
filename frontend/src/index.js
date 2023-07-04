@@ -11,7 +11,10 @@ import Navbar from "./components/Navbar";
 
 import Home from "./routes/Home";
 import About from "./routes/About";
-import Signup from "./routes/Signup"
+import Signup from "./routes/Signup";
+import "./index.css"
+import Register from "./routes/Register";
+import Products from "./routes/Products";
 
 const AppLayout = () => {
 	return (
@@ -21,7 +24,6 @@ const AppLayout = () => {
 		</>
 	);
 };
-
 
 
 const router = createBrowserRouter([
@@ -40,6 +42,15 @@ const router = createBrowserRouter([
 				path: "signup",
 				element: <Signup />
 			  },
+			  {
+				path: "register",
+				element: <Register />
+			  },
+			  {
+				path: "products",
+				element: <Products />
+			  },
+			
 			
 
 		]
@@ -52,30 +63,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // import { Nav, NavLink, NavMenu }
