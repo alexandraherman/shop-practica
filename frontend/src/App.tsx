@@ -1,21 +1,36 @@
-import React from 'react';
-//import logo from './logo.svg';
-import './App.css';
 
-//import { Nav, NavLink, NavMenu } from "./NavbarElements";
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
-//import Home from './pages/Home';
-//import {About,Signup} from './pages';
-import "./Navbar.js";
-import "./Home.js";
+import * as React from "react";
+import { createRoot } from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+  Outlet,
+  Routes,
+} from "react-router-dom";
 
- 
-function App() {
-    return (
-        <div>
-           
-        </div>
-    );
-}
- 
+import Navbar from "./components/Navbar";
+import Home from "./routes/Home";
+import About from "./routes/About";
+import Signup from "./routes/Signup";
+import "./index.css"
+import Register from "./routes/Register";
+import Products from "./routes/Products";
+
+const App = () => {
+	return (
+		<>
+		<Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/signup' element={<Signup />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/products' element={<Products />} />
+        </Routes>
+		</>
+	);
+};
+
 export default App;

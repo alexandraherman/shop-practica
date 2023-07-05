@@ -1,14 +1,16 @@
 import react from "react"
 import "./Home.css";
 import { Button } from './Button';
+
 const Home = () => {
 	return (
 	  <div>
+			
 			<div className="card">
 				<h1>Home</h1>
 			</div>
+		
 			<div className='hero-container'>
-      			{/*<img src='./images/p1.jpg'></img>*/}
       			<h1>The adventure of creation</h1>
       			<p>What are you waiting for?</p>
 

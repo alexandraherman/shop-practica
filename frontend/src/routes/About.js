@@ -31,12 +31,10 @@ const About = () => {
 						<li>Va găsi soluții la problemele sale</li>
 						<li>Va învăța să se relaxeze</li>
 					</ol>
-					<div className="image-container">
-						<img src="/p1.png" alt="Imagine care nu stiu de ce nu se pune" className="point-image" />
+					<div>
+						<img src='./frontend/src/routes/biblioteca1.jpg'  alt="hello"/>
 					</div>
 				</div>
-
-					
 				<p>Data viitoare, când ai de ales între o jucărie nouă și strălucitoare și o carte mică, ce vei alege pentru copilul tău?</p>
     		</div>
 		
