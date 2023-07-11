@@ -67,6 +67,15 @@ function Navbar()
                         Products
                         </NavLink>
                     </li>
+                    <li className="nav-item">
+                        <NavLink to="/create" 
+                        className={({ isActive }) => 
+                        "nav-links" + (isActive ? " activated" :"")}
+                        onClick={closeMobileMenu}
+                        >
+                        Add
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
         </nav>

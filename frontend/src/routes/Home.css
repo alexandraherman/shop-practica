@@ -6,7 +6,7 @@
     background-size: cover;
     background-color: aqua;
     position: relative;
-    z-index: 0;
+    z-index: 0; 
   }
   .topleft {
     position: absolute;
