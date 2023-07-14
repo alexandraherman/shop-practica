@@ -13,7 +13,7 @@ function Add(){
     const[price, setPrice]=useState("");
 
     let history= useNavigate();
-
+ 
     const handleSubmit=(e) =>{
         e.preventDefault();
 
@@ -27,6 +27,13 @@ function Add(){
         //aici trebe sa modific
         
         history("/Products");
+
+        const product = {
+            id:'2',
+            title:'aa',
+            author:'bb',
+            price:'7'
+        }
 
 
     }

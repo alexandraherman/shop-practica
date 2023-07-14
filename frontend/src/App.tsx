@@ -17,7 +17,7 @@ import {
 import Navbar from "./components/Navbar";
 import Home from "./routes/Home";
 import About from "./routes/About";
-import Signup from "./routes/Signup";
+import Signup from "./routes/Signin";
 import "./index.css"
 import Register from "./routes/Register";
 import Products from "./routes/Products";
@@ -34,7 +34,7 @@ const App = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:3000');
+      const response = await axios.get('http://localhost:3001');
       setData(response.data);
     } catch (error) {
       console.error(error);

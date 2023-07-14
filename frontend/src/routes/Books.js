@@ -1,5 +1,4 @@
 
-
 const Books =[
 
 {
@@ -7,6 +6,7 @@ const Books =[
      title:'Odysseia',
      author: 'Homer', 
      price: 75,
+    imagine: './images/Odysseia.jpeg',
    
 },
 {
@@ -14,6 +14,7 @@ const Books =[
      title:'Ion',
      author: 'Slavici', 
      price: 45,
+     imagine: './images/Odysseia.jpeg',
    
 }
 

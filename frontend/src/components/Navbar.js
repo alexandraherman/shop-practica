@@ -46,7 +46,7 @@ function Navbar()
                         "nav-links" + (isActive ? " activated" :"")}
                         onClick={closeMobileMenu}
                         >
-                        Signup
+                        Login
                         </NavLink>
                     </li>
                     <li className="nav-item">
