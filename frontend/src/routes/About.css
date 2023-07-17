@@ -1,0 +1,66 @@
+/* About.css */
+.info{
+   
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color:#1f53bd;
+  }
+
+  .points {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .image-container {
+    background: url(./../images/p2.jpg) center center/cover no-repeat; 
+    height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+   
+  }
+  .chenar {
+    border: 2px ;
+    padding: 20px;
+    background-color: #D38B5D;
+    opacity: 70%;
+    font-size: 16px;
+    font-weight: 700;
+    text-align:center;
+    position:relative;
+    width: 30%;
+    margin-top: 15px;
+    margin-left: 500px;
+    margin-bottom: 50px;
+    
+    
+  }
+  
+  .point-image {
+    width: 20px; 
+  }
+  
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  ol {
+    margin: 0 0 20px 20px;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
+  ul {
+    list-style-type: none; /* Elimină marcatorii impliciți */
+  }

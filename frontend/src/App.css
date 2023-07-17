@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(177, 35, 35);
 }
 
 .App-link {
@@ -34,5 +34,48 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.nav {
+  background: #ffb3ff;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem calc((100vw - 1000px) / 2);
+  z-index: 12;
+}
+
+.nav-link {
+  color: #808080;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+.nav-link.active {
+  color: #4d4dff;
+}
+
+.bars {
+  display: none;
+  color: #808080;
+}
+
+@media screen and (max-width: 768px) {
+  .bars {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: none;
   }
 }
